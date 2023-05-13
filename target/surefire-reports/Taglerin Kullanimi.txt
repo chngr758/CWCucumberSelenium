@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: Taglerin Kullanimi
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.195 s <<< FAILURE! - in Taglerin Kullanimi
+Taglerin Kullanimi.Regression test senaryosu  Time elapsed: 0.068 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'abc' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("abc")
+public void abc() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

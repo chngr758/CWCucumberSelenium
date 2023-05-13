@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: User Login HRM with dataTable
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 16.277 s <<< FAILURE! - in User Login HRM with dataTable
+User Login HRM with dataTable.TC07_Baslikli datatable  Time elapsed: 11.852 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to find element with locator By.name: username
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-TIDOMAP', ip: '192.168.1.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at pages.OrangeHRMLoginPage.typeUsername(OrangeHRMLoginPage.java:36)
+	at stepdefinitions.OrangeHRMStepDefinitions.kullaniciCredentialsGirer(OrangeHRMStepDefinitions.java:71)
+	at ✽.kullanici valid credentials girer(file:///C:/Users/user/IdeaProjects/CWCucumberSelenium/src/test/resources/features/08_DataTable.feature:6)
+
+User Login HRM with dataTable.TC08_Baslikli coklu satir datatable  Time elapsed: 4.424 s  <<< ERROR!
+java.lang.NullPointerException
+	at utilities.Driver.getDriver(Driver.java:39)
+	at stepdefinitions.OrangeHRMStepDefinitions.kullaniciInvalidCredentialsGirer(OrangeHRMStepDefinitions.java:87)
+	at ✽.kullanici invalid credentials girer(file:///C:/Users/user/IdeaProjects/CWCucumberSelenium/src/test/resources/features/08_DataTable.feature:13)
+
